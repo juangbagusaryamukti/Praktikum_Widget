@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ScaffoldScreen extends StatefulWidget {
+  const ScaffoldScreen({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _ScaffoldScreenState createState() => _ScaffoldScreenState();
 }
 
@@ -12,7 +15,7 @@ class _ScaffoldScreenState extends State<ScaffoldScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sample Code'),
+        title: const Text('Sample Code'),
       ),
       body: Center(
         child: Text('You have pressed the button $_count times.'),
@@ -29,7 +32,7 @@ class _ScaffoldScreenState extends State<ScaffoldScreen> {
           });
         },
         tooltip: 'Increment Counter',
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

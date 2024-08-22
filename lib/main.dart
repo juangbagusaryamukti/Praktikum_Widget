@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,18 +15,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         fontFamily: 'Roboto',
         textTheme: TextTheme(
-          headline6: TextStyle(
+          titleLarge: const TextStyle(
             fontSize: 18.0,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
-          bodyText2: TextStyle(
+          bodyMedium: TextStyle(
             fontSize: 14.0,
             color: Colors.grey[600],
           ),
         ),
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

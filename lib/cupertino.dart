@@ -7,17 +7,17 @@ class Cupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Contoh Cupertino')),
+      appBar: AppBar(title: const Text('Contoh Cupertino')),
       body: Container(
-        margin: EdgeInsets.only(top: 30),
+        margin: const EdgeInsets.only(top: 30),
         color: Colors.white,
         child: Column(
           children: <Widget>[
             CupertinoButton(
-              child: Text("Contoh button"),
+              child: const Text("Contoh button"),
               onPressed: () {},
             ),
-            CupertinoActivityIndicator(),
+            const CupertinoActivityIndicator(),
           ],
         ),
       ),

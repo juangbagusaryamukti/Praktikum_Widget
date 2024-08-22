@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/news_tab.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('MyApp'),
-          bottom: TabBar(
+          title: const Text('MyApp'),
+          bottom: const TabBar(
             tabs: [
               Tab(text: 'BERITA TERBARU'),
               Tab(text: 'PERTANDINGAN HARI INI'),
@@ -19,7 +21,7 @@ class HomePage extends StatelessWidget {
         body: TabBarView(
           children: [
             NewsTab(),
-            Center(child: Text('Pertandingan Hari Ini')),
+            const Center(child: Text('Pertandingan Hari Ini')),
           ],
         ),
       ),

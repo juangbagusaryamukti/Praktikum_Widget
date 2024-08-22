@@ -5,6 +5,6 @@ class TextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Hello flutter, apakah anda mobile?");
+    return const Text("Hello flutter, apakah anda mobile?");
   }
 }

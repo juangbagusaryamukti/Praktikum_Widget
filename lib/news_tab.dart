@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'news_item.dart';
 
 class NewsTab extends StatelessWidget {
+  const NewsTab({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: [
+      children: const [
         NewsItem(
           imageUrl: 'assets/images/diego-costa.jpg',
           title: 'Costa Mendekat Ke Palmeiras',

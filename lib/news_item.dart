@@ -8,7 +8,7 @@ class NewsItem extends StatelessWidget {
   final bool isCategoryHighlighted;
   final bool isHorizontalLayout;
 
-  NewsItem({
+  const NewsItem({super.key, 
     required this.imageUrl,
     required this.title,
     this.category = '',
@@ -23,7 +23,7 @@ class NewsItem extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
       ),
-      margin: EdgeInsets.all(8.0),
+      margin: const EdgeInsets.all(8.0),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: isHorizontalLayout
@@ -49,11 +49,11 @@ class NewsItem extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(width: 8.0),
+            const SizedBox(width: 8.0),
             Expanded(
               child: Text(
                 title,
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
             ),
           ],
@@ -63,7 +63,7 @@ class NewsItem extends StatelessWidget {
             padding: const EdgeInsets.only(top: 8.0),
             child: Text(
               date,
-              style: Theme.of(context).textTheme.bodyText2,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
           ),
       ],
@@ -86,7 +86,7 @@ class NewsItem extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 8.0),
           child: Text(
             title,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
         if (category.isNotEmpty)
@@ -110,7 +110,7 @@ class NewsItem extends StatelessWidget {
             padding: const EdgeInsets.only(top: 8.0),
             child: Text(
               date,
-              style: Theme.of(context).textTheme.bodyText2,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
           ),
       ],
