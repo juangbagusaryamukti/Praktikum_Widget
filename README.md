@@ -1,1 +1,2 @@
-![Logo Perusahaan](assets/images/hasil.jpg)
+## Hasil Screenshot
+![alt text](assets/images/hasil.jpg)
